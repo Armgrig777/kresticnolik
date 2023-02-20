@@ -19,7 +19,7 @@ namespace kresticnolik
         public Form1()
         {
             InitializeComponent();
-         
+         LoadButtons(); 
            
         }
 
@@ -41,11 +41,8 @@ namespace kresticnolik
                     continue;
 
                 btn.Click += btnNum_Click;
-                if(combo.Count>0)
-                    combo.Remove(btn);
                 
-               
-               
+                
             }
             Score();
            
@@ -58,6 +55,8 @@ namespace kresticnolik
             btn.Enabled=false;
             btn.Text = "X";
             btn.BackColor = Color.Aqua;
+            combo.Remove(btn);
+            AIMove();
           
             
             
@@ -67,8 +66,7 @@ namespace kresticnolik
 
         public void AIMove()
         {
-            if (combo.Count > 0)
-            {
+          
 
                 int index = random.Next(combo.Count);
                 combo[index].Enabled = false;
@@ -78,7 +76,7 @@ namespace kresticnolik
                 
                 Score();
                 
-            }
+            
 
         }
         public void Score()
@@ -124,8 +122,8 @@ namespace kresticnolik
         private void btnrestart_Click(object sender, EventArgs e)
         {
             restart();
-            label4.Text = "";
-            label5.Text = "";
+            playerscore = 0;
+            compscore = 0;
         }
         public void restart()
         {
@@ -133,10 +131,13 @@ namespace kresticnolik
             {
                 Button btn = item as Button;
                 btn.Text = "";
+                btn.Enabled = true;
                 btn.BackColor = default(Color);
+               
 
             }
             LoadButtons();
+          
             
         }
     }
