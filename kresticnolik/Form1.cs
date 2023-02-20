@@ -109,7 +109,7 @@ namespace kresticnolik
             {
                 MessageBox.Show("Computer Wins");
                 compscore++;
-                label5.Text =  playerscore.ToString();
+                label5.Text =  compscore.ToString();
                 restart();
 
             }
