@@ -56,7 +56,7 @@ namespace kresticnolik
             btn.Text = "X";
             btn.BackColor = Color.Aqua;
             combo.Remove(btn);
-            AIMove();
+            
           
             
             
