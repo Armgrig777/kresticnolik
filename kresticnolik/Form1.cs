@@ -66,15 +66,45 @@ namespace kresticnolik
 
         public void AIMove()
         {
-          
+            if (btn1.Text == "X" && btn3.Text == "X")
+                btn2.Text = "O";
+            if (btn4.Text == "X" && btn6.Text == "X")
+                btn5.Text = "O";
+            if (btn7.Text == "X" && btn9.Text == "X")
+                btn8.Text = "O";
+            if (btn1.Text == "X" && btn7.Text == "X")
+                btn4.Text = "O";
+            if (btn2.Text == "X" && btn8.Text == "X")
+                btn5.Text = "O";
+            if (btn3.Text == "X" && btn9.Text == "X")
+                btn6.Text = "O";
+            if (btn1.Text == "X" && btn9.Text == "X")
+                btn5.Text = "O";
+            if (btn3.Text == "X" && btn7.Text == "X")
+                btn5.Text = "O";
+            if (btn4.Text == "X" && btn7.Text == "X")
+                btn1.Text = "O";
+            if (btn1.Text == "X" && btn4.Text == "X")
+                btn7.Text = "O";
+            if (btn2.Text == "X" && btn5.Text == "X")
+                btn8.Text = "O";
+            if (btn8.Text == "X" && btn5.Text == "X")
+                btn2.Text = "O";
+            if (btn3.Text == "X" && btn6.Text == "X")
+                btn9.Text = "O";
+            if (btn6.Text == "X" && btn9.Text == "X")
+                btn3.Text = "O";
+            if (btn1.Text == "X" && btn5.Text == "X")
+                btn9.Text = "O";
+            if (btn9.Text == "X" && btn5.Text == "X")
+                btn1.Text = "O";
+            if (btn5.Text == "X" && btn3.Text == "X")
+                btn7.Text = "O";
+            if (btn7.Text == "X" && btn5.Text == "X")
+                btn3.Text = "O";
 
-                int index = random.Next(combo.Count);
-                combo[index].Enabled = false;
-                combo[index].Text = "O";
-                combo[index].BackColor = Color.Red;
-                combo.RemoveAt(index);
-                
-                Score();
+
+            Score()
                 
             
 
