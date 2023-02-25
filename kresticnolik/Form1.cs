@@ -67,44 +67,89 @@ namespace kresticnolik
 
         public void AIMove()
         {
+         Button btn = new Button();
+            int index;
+
             if (btn1.Text == "X" && btn3.Text == "X" && btn2.Text == "")
+                btn2.BackColor = Color.MediumVioletRed;
                 btn2.Text = "O";
             if (btn4.Text == "X" && btn6.Text == "X" && btn5.Text == "")
-                btn5.Text = "O";
+                btn5.BackColor = Color.MediumVioletRed;
+            btn5.Text = "O";
             if (btn7.Text == "X" && btn9.Text == "X" && btn8.Text == "")
-                btn8.Text = "O";
+                btn8.BackColor = Color.MediumVioletRed;
+            btn8.Text = "O";
             if (btn1.Text == "X" && btn7.Text == "X" && btn4.Text == "")
-                btn4.Text = "O";
+                btn4.BackColor = Color.MediumVioletRed;
+            btn4.Text = "O";
             if (btn2.Text == "X" && btn8.Text == "X" && btn5.Text == "")
-                btn5.Text = "O";
+                btn5.BackColor = Color.MediumVioletRed;
+            btn5.Text = "O";
             if (btn3.Text == "X" && btn9.Text == "X" && btn6.Text == "")
-                btn6.Text = "O";
+                btn6.BackColor = Color.MediumVioletRed;
+            btn6.Text = "O";
             if (btn1.Text == "X" && btn9.Text == "X" && btn5.Text == "")
-                btn5.Text = "O";
+                btn5.BackColor = Color.MediumVioletRed;
+            btn5.Text = "O";
             if (btn3.Text == "X" && btn7.Text == "X" && btn5.Text == "")
-                btn5.Text = "O";
+                btn5.BackColor = Color.MediumVioletRed;
+            btn5.Text = "O";
             if (btn4.Text == "X" && btn7.Text == "X" && btn1.Text == "")
-                btn1.Text = "O";
+                btn1.BackColor = Color.MediumVioletRed;
+            btn1.Text = "O";
             if (btn1.Text == "X" && btn4.Text == "X" && btn7.Text == "")
-                btn7.Text = "O";
+                btn7.BackColor = Color.MediumVioletRed;
+            btn7.Text = "O";
             if (btn2.Text == "X" && btn5.Text == "X" && btn8.Text == "")
-                btn8.Text = "O";
+                btn8.BackColor = Color.MediumVioletRed;
+            btn8.Text = "O";
             if (btn8.Text == "X" && btn5.Text == "X" && btn2.Text == "")
-                btn2.Text = "O";
+                btn2.BackColor = Color.MediumVioletRed;
+            btn2.Text = "O";
             if (btn3.Text == "X" && btn6.Text == "X" && btn9.Text == "")
-                btn9.Text = "O";
+                btn9.BackColor = Color.MediumVioletRed;
+            btn9.Text = "O";
             if (btn6.Text == "X" && btn9.Text == "X" && btn3.Text == "")
-                btn3.Text = "O";
+                btn3.BackColor = Color.MediumVioletRed;
+            btn3.Text = "O";
             if (btn1.Text == "X" && btn5.Text == "X" && btn9.Text == "")
-                btn9.Text = "O";
+                btn9.BackColor = Color.MediumVioletRed;
+            btn9.Text = "O";
             if (btn9.Text == "X" && btn5.Text == "X" && btn1.Text == "")
-                btn1.Text = "O";
+                btn1.BackColor = Color.MediumVioletRed;
+            btn1.Text = "O";
             if (btn5.Text == "X" && btn3.Text == "X" && btn7.Text == "")
-                btn7.Text = "O";
+                btn7.BackColor = Color.MediumVioletRed;
+            btn7.Text = "O";
             if (btn7.Text == "X" && btn5.Text == "X" && btn3.Text == "")
-                btn3.Text = "O";
+                btn3.BackColor = Color.MediumVioletRed;
+            btn3.Text = "O";
+            if (btn7.Text == "X" && btn8.Text == "X" && btn9.Text == "")
+                btn9.BackColor = Color.MediumVioletRed;
+            btn9.Text = "O";
+            if (btn8.Text == "X" && btn9.Text == "X" && btn7.Text == "")
+                btn7.BackColor = Color.MediumVioletRed;
+            btn7.Text = "O";
+            if (btn4.Text == "X" && btn5.Text == "X" && btn6.Text == "")
+                btn6.BackColor = Color.MediumVioletRed;
+            btn6.Text = "O";
+            if (btn5.Text == "X" && btn6.Text == "X" && btn4.Text == "")
+                btn4.BackColor = Color.MediumVioletRed;
+            btn4.Text = "O";
+            if (btn1.Text == "X" && btn2.Text == "X" && btn3.Text == "")
+                btn3.BackColor = Color.MediumVioletRed;
+            btn3.Text = "O";
+            if (btn2.Text == "X" && btn3.Text == "X" && btn1.Text == "")
+                btn1.BackColor = Color.MediumVioletRed;
+            btn1.Text = "O";
+            if (default)
+            {
+                index = random.Next(combo.Count);
+                btn = (Button)combo[index];
+                btn.Text = "O";
+                btn.BackColor = Color.MediumVioletRed;
 
-
+            }
             Score();
                 
             
