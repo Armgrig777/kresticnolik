@@ -55,7 +55,8 @@ namespace kresticnolik
             btn.Enabled=false;
             btn.Text = "X";
             btn.BackColor = Color.Aqua;
-            combo.Remove(btn);
+            AIMove();
+            
             
           
             
@@ -66,45 +67,45 @@ namespace kresticnolik
 
         public void AIMove()
         {
-            if (btn1.Text == "X" && btn3.Text == "X")
+            if (btn1.Text == "X" && btn3.Text == "X" && btn2.Text == "")
                 btn2.Text = "O";
-            if (btn4.Text == "X" && btn6.Text == "X")
+            if (btn4.Text == "X" && btn6.Text == "X" && btn5.Text == "")
                 btn5.Text = "O";
-            if (btn7.Text == "X" && btn9.Text == "X")
+            if (btn7.Text == "X" && btn9.Text == "X" && btn8.Text == "")
                 btn8.Text = "O";
-            if (btn1.Text == "X" && btn7.Text == "X")
+            if (btn1.Text == "X" && btn7.Text == "X" && btn4.Text == "")
                 btn4.Text = "O";
-            if (btn2.Text == "X" && btn8.Text == "X")
+            if (btn2.Text == "X" && btn8.Text == "X" && btn5.Text == "")
                 btn5.Text = "O";
-            if (btn3.Text == "X" && btn9.Text == "X")
+            if (btn3.Text == "X" && btn9.Text == "X" && btn6.Text == "")
                 btn6.Text = "O";
-            if (btn1.Text == "X" && btn9.Text == "X")
+            if (btn1.Text == "X" && btn9.Text == "X" && btn5.Text == "")
                 btn5.Text = "O";
-            if (btn3.Text == "X" && btn7.Text == "X")
+            if (btn3.Text == "X" && btn7.Text == "X" && btn5.Text == "")
                 btn5.Text = "O";
-            if (btn4.Text == "X" && btn7.Text == "X")
+            if (btn4.Text == "X" && btn7.Text == "X" && btn1.Text == "")
                 btn1.Text = "O";
-            if (btn1.Text == "X" && btn4.Text == "X")
+            if (btn1.Text == "X" && btn4.Text == "X" && btn7.Text == "")
                 btn7.Text = "O";
-            if (btn2.Text == "X" && btn5.Text == "X")
+            if (btn2.Text == "X" && btn5.Text == "X" && btn8.Text == "")
                 btn8.Text = "O";
-            if (btn8.Text == "X" && btn5.Text == "X")
+            if (btn8.Text == "X" && btn5.Text == "X" && btn2.Text == "")
                 btn2.Text = "O";
-            if (btn3.Text == "X" && btn6.Text == "X")
+            if (btn3.Text == "X" && btn6.Text == "X" && btn9.Text == "")
                 btn9.Text = "O";
-            if (btn6.Text == "X" && btn9.Text == "X")
+            if (btn6.Text == "X" && btn9.Text == "X" && btn3.Text == "")
                 btn3.Text = "O";
-            if (btn1.Text == "X" && btn5.Text == "X")
+            if (btn1.Text == "X" && btn5.Text == "X" && btn9.Text == "")
                 btn9.Text = "O";
-            if (btn9.Text == "X" && btn5.Text == "X")
+            if (btn9.Text == "X" && btn5.Text == "X" && btn1.Text == "")
                 btn1.Text = "O";
-            if (btn5.Text == "X" && btn3.Text == "X")
+            if (btn5.Text == "X" && btn3.Text == "X" && btn7.Text == "")
                 btn7.Text = "O";
-            if (btn7.Text == "X" && btn5.Text == "X")
+            if (btn7.Text == "X" && btn5.Text == "X" && btn3.Text == "")
                 btn3.Text = "O";
 
 
-            Score()
+            Score();
                 
             
 
